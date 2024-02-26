@@ -8,7 +8,7 @@ def H(X, N=4):
     hex_dig = hash_object.hexdigest()
     binary_hash = bin(int(hex_dig, 16))[2:]
     K0a = binary_hash[:N]  # Capture the first 4 digits
-    while len(K0a) < N:   # 如果二进制哈希长度小于 K，填充 0 到 4 位
+    while len(K0a) < N:
         K0a = '0' + K0a
     return K0a
 K0 = '0010'  # Alice and Bob pre-share K0
@@ -47,7 +47,7 @@ print('QS_single_photons_Alice:',QS_single_photons_Alice,'\n')
 print('Mea_bases_Alice:',Mea_bases_Alice,'\n')
 print('Bin_sequence_Alice:',Bin_sequence_Alice,'\n')
 
-# Bob receives the right quantum sequence QS_single_photons_Alice and right ra
+# Bob receives the correct quantum sequence QS_single_photons_Alice and the correct random number ra
 K0b = H(K0+ra, N) # Alice calculates H(K0+ra)
 print('The hash key of Bob: K0b = H(K0+ra) = 'f"H({K0+ra}) = {K0b}",'\n')
 def measure_single_photons(binary_string, QS_single_photons_Alice):
@@ -268,7 +268,7 @@ print('In the first communication, Bob calculates the communication key K1 = K0(
 
 # Alice and Bob use K1 to communicate in the first communication
 # They use K1 to authenticate each other in the second communication
-# They use K1 to get new communication key K2, and use K2 in the second communication
+# They use K1 to get new communication key K2, and use K2 to communicate in the second communication
 
 
 
