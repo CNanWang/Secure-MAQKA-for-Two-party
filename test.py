@@ -73,7 +73,7 @@ print('Bin_sequence_Bob:',Bin_sequence_Bob,'\n')
 
 # compare Bin_sequence_Alice and Bin_sequence_Bob
 def compare_binary_sequences(Bin_sequence_Alice, Bin_sequence_Bob):
-    Error = 0  # 定义BSa和BSb中不同的二进制数为0
+    Error = 0
     for i in range(len(Bin_sequence_Bob)):
         if Bin_sequence_Alice[i] == Bin_sequence_Bob[i]:
             pass
