@@ -237,7 +237,7 @@ for i in range(4):
 print('Alice holds the shared key K0 =',K0,'\n')
 print('Alice holds the private key Ka1 =',Ka1,'\n')
 print('Alice gets the private key Kb1 = ',Kb1,'\n')
-print('In the first communication, Alice calculates the communication key K1 = K0(XOR))Ka1(XOR))Kb1 =',1010,'\n')
+print('In the first communication, Alice calculates the communication key K1 = K0(XOR)Ka1(XOR)Kb1 =',1010,'\n')
 
 # Bob compare Tb0, Tb1, and Tb2 to get Ka1
 Tb0 = [1,0,1,1,0,1,0,0]
@@ -264,7 +264,7 @@ for i in range(4):
 print('Bob holds the shared key K0 =',K0,'\n')
 print('Bob holds the private key Kb1 =',Kb1,'\n')
 print('Bob gets the private key Ka1 = ',Ka1,'\n')
-print('In the first communication, Bob calculates the communication key K1 = K0(XOR))Ka1(XOR))Kb1 =',1010)
+print('In the first communication, Bob calculates the communication key K1 = K0(XOR)Ka1(XOR)Kb1 =',1010)
 
 # Alice and Bob use K1 to communicate in the first communication
 # They use K1 to authenticate each other in the second communication
